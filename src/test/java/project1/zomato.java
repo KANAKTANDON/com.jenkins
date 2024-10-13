@@ -15,7 +15,8 @@ public class zomato {
     @Test // Annotate the method with @Test
     public void forbes() throws Exception {
         // Setup ChromeDriver
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Kanak Tandon\\NewEclipseWorkspace\\chromedriver_129.exe");
+    	String driverPath = System.getProperty("user.dir") + "/driver/chromedriver129.exe" ;
+        System.setProperty("webdriver.chrome.driver",driverPath);
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
